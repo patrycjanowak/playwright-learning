@@ -67,3 +67,5 @@ test.describe('Pulpit tests', () => {
     await expect(page.locator('#money_value')).toHaveText(`${expectedBalance}`);
   });
 });
+
+//test
