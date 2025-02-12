@@ -1,10 +1,11 @@
 import { test, expect } from '@playwright/test';
+import { loginData } from '../test-data/login.data';
 
 test.describe('Pulpit tests', () => {
   test.beforeEach(async ({ page }) => {
     const url = 'https://demo-bank.vercel.app/';
-    const userId = 'testerLO';
-    const userPassword = '10987654';
+    const userId = loginData.userId;
+    const userPassword = loginData.userPassword;
 
     await page.goto(url);
     await page.getByTestId('login-input').fill(userId);
