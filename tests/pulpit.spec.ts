@@ -11,6 +11,7 @@ test.describe('Pulpit tests', () => {
     await page.getByTestId('password-input').fill(userPassword);
     await page.getByTestId('login-button').click();
   });
+
   test('quick payment with correct data', async ({ page }) => {
     //Arrange
     const receiverId = '2';
