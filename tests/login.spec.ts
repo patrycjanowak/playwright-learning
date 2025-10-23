@@ -12,7 +12,7 @@ test.describe('User login to Demobank', () => {
     await page.goto('/');
   });
 
-  test('successful login with correct credentials', async ({ page }) => {
+  test.only('successful login with correct credentials', async ({ page }) => {
     //Arrange
     const userId = loginData.userId;
     const userPassword = loginData.userPassword;
